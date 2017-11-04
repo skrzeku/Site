@@ -86,10 +86,10 @@ window.translatore = function ()
       '"Ludzie myślą, że informatyka jest dziedziną geniuszy, ale w rzeczywistości jest na odwrót - wielu ludzi robiących rzeczy bazujące na sobie - jak ściana z mini-kamieni" - Donald Knuth': {
           en: '"People think that computer science is the art of geniuses, but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones." - Donald Knuth'
       },
-        'Strona została wykononana przy użyciu Html5, CSS3 oraz Javascriptu z biblioteką Jquery. Strona dostosowana jest również do wszystkich urządzeń mobilnych dzięki pracy z bibliotekami Bootstrap 3, który umożliwia tworzenie responsywnych stron. Zostało zaczerpnięte również kilka ogólno dostępnych pluginów m.in. TwinLite oraz translate.js. Kod źródłowy do strony znajduje się ' : {
+         'Strona została wykononana przy użyciu Html5, CSS3 oraz Javascriptu z biblioteką Jquery. Strona dostosowana jest również do wszystkich urządzeń mobilnych dzięki pracy z bibliotekami Bootstrap 3, który umożliwia tworzenie responsywnych stron. Zostało zaczerpnięte również kilka ogólno dostępnych pluginów m.in. TwinLite oraz translate.js. Kod źródłowy do strony znajduje się w linku: ' : {
             en: 'sfsfsfsfsfsf'
         },
-         'Gra okienkowa kółko i krzyżyk napisana w języku java w środowisku IDE przy użyciu Eclipse. W grze dokładnie widzimy który gracz wybiera pole w tym momencie, został ułożony mechanizm zwycięstwa oraz możliwość zrestartowania gry w dowolnym momencie jak i po jej zakończeniu. Kod źródłowy z grą znajduje się ' : {
+         'Gra okienkowa kółko i krzyżyk napisana w języku java w środowisku IDE przy użyciu Eclipse. W grze dokładnie widzimy który gracz wybiera pole w tym momencie, został ułożony mechanizm zwycięstwa oraz możliwość zrestartowania gry w dowolnym momencie jak i po jej zakończeniu. Kod źródłowy z grą znajduje się w linku: ' : {
              en: 'siejfjf'
          },
          projects_info : {

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl_Pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+    <meta name="keywords" content="Paweł Skrzeszewski">
+      
+    <title>Portfolio Paweł Skrzeszewski</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      
+	<!-- Font Awasome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Pacifico|Vollkorn|Lora" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+      
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      
+      <!-- Scripts JS -->
+     <script src="js/timer.js"></script>
+	<script src="js/flags.js"></script>
+      <script src="js/quotes.js"></script>
+      <!-- script translator -->
+      <script src="js/translator.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+      
+      
+	<!-- styles -->
+	<link rel="stylesheet" href="css/loader.css">
+    <link href="translatejs.css" rel="stylesheet">
+    <link href="js/jquery/jquery-ui.css" rel="stylesheet" type="text/css">
+      
+  <!-- Scripts -->
+      <!-- TimeOuts Functions and Intervals functions-->
+      
+	<script type="text/javascript"> 
+	 $(document).ready(function (){
+	 window.setTimeout('slide_quotes();', 3000);
+     window.setTimeout('jump_flags1 ();', 3000);
+    window.setTimeout('jump_flags2 ();', 4500);
+         translatore();
+	 });
+        
+        function jump_flags1 () {
+            setInterval('jump_flag1 ();', 5000);
+        };
+        function jump_flags2 () {
+            setInterval('jump_flag2 ();', 5000);
+        };
+        
+	function slide_quotes () {
+	setInterval('changequotes();', 12000);
+	};
+	</script>
+	
+  </head>
+    
+    <!-- Body -->
+  <body onload="odliczanie ();">   
+      
+      
+      <!-- Navbar -->
+<nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: transparent;">
+<div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mysNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" id="black_font">Paweł Skrzeszewski</a>
+    </div>
+<div class="collapse navbar-collapse" id="mysNavbar" >
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#" class="trn">Główna</a></li>
+        <li><a href="omnie.html" class="trn" id="black_font">O mnie</a></li>
+      <li><a href="portfolio.html" class="trn" id="black_font">Portfolio</a></li>
+      <li><a href="kontakt.html" class="trn" id="black_font">Kontakt</a></li>
+    </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li> <div id="zegar"> 12:00:00</div></li>
+    
+            <li> <a href="#" id="flag1" class="lang_selector trn" data-value="pl"><img src="image/pl.png" style="width: 22px;"></a></li>
+            <li> <a href="#" id="flag2" class="lang_selector trn" data-value="en"><img src="image/gb.png" style="width: 22px;"></a></li></ul>
+    
+</div>
+    </div>  
+
+</nav>   <!-- End navbar -->
+     
+
+      <!-- LeFt Square -->
+<div class="container-fluid">
+ <div id="smallcontainer1" class="col-md-6">
+     <!-- quotes -->
+<div class="col-md-12 rectangle"><p id="all_quotes" class="trn">"Biorąc pod uwagę aktualny, smutny stan naszych programów komputerowych, rozwijanie oprogramowania jest cały czas jeszcze czarną magią i nie może być jeszcze nazwane dziedziną inżynierii." - Bill Clinton</p></div>
+    
+    </div>
+<!-- right container javascrpits -->
+<div id="smallcontainer2" class="col-md-6 col-sm-12" style="background-color: transparent">
+<div class="col-md-12 col-sm-12" id="monitor"><p id="lorem" class="trn" style="display: none" data-trn-key="lorem">Nazywam się Paweł Skrzeszewski i witam wszystkich na mojej stronie! Stronę wykonałem osobiście i będę tu zamieszczał wszytkie informację o mnie jak również projekty które dotychczas udało mi się zrealizować. Wszystkie informacje o mojej osobie w zakładkach "o mnie" i "kontakt", wykonane projekty w zakładce "portfolio". Pozdrawiam - Paweł Skrzeszewski </p>
+<p id="lorem_off"><a href="#"><img src="image/button.png" id="image_ON"></a></p>
+
+</div> 
+      </div>
+</div>
+
+<div id="copyright" class="trn col-md-12 col-sm-12 col-xs-12 trn" > Copyright © 2017 Portfolio programisty - Paweł Skrzeszewski. Wszelkie prawa zastrzeżone. </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.translate.js"></script>
+    <script src="js/monitor.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+         
+   
+  </body>
+</html>

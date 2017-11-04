@@ -1,0 +1,346 @@
+body {
+    
+    padding-top: 72px;
+    background-color: white;
+    background-image: url(background-light-web-opera-blue-simple.jpg); 
+   display: none;
+    overflow-x:hidden;
+
+  }
+#loader {
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    background-color:#08121E;
+    color: #eee;
+    text-align: center;
+}
+#black_font {
+    color: black;
+    font-weight: 800;  
+}
+.navbar-collapse {
+    color: black;
+}
+#nav_main {
+    color: black;
+}
+#smallcontainer1
+{
+height: 500px;
+}
+#smallcontainer2
+{
+height: 500px;
+background-color: transparent;
+
+}
+#navbar-top
+{
+	width: 100%;
+	background-size:100%;
+    height: 60px;
+}
+#flag1
+{
+    
+    padding-left: 25px;
+    padding-top: 15px;
+   
+}
+#flag2
+{
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+#zegar
+{
+	font-size: 25px;
+	margin-top: 10px;
+	text-align: right;
+	color: black;
+	font-family: 'Gloria Hallelujah';
+}
+#main_page {
+	font-size: 30px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+.rectangle 
+{
+	margin-top: 58vh;
+	height: 29vh;
+    background-color: transparent;
+    border-style: hidden;	
+}
+#site
+{
+    padding-left: 50px;
+    
+}
+
+#icon_container {
+    margin-top: 8vh;
+	height: 20vh;
+    background-color: transparent;
+    border-style: hidden;
+}
+#rec_contact {
+    margin-top: 30vh;
+}
+#all_quotes
+{
+    position: relative;
+    font-size: 3vh;
+	text-align: justify;
+	font-family: 'Gloria Hallelujah', cursive;
+	color: black;
+	text-shadow: black;
+}
+#icons
+{
+	font-size: 105px;
+	margin-top: 45px;
+	color: white;
+}
+#icons:hover
+{
+	color: blue;
+}
+#monitor {
+    width: 100%;
+    margin-top: 2vh;
+    height: 390px;
+    background-image: url(monitor6.png);
+    background-color: transparent;
+background-repeat: no-repeat;
+    background-size: contain;
+}
+#monitor1 {
+    width: 100%;
+    margin-top: 2vh;
+    height: 390px;
+    background-image: url(monitor6.png);
+    background-color: transparent;
+background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#image_ON {
+    background-color: transparent;
+    width:30%;
+    background-size: contain;
+    margin-top: 15%;
+    margin-left: 35%;
+    color: white;
+    opacity: 1;
+  
+}
+#image_ON:hover {
+    opacity: .5;
+}
+#gma {
+    
+     width: 90vh;
+    height: 85vh;
+    padding: 20px;
+	margin-top: 6vh;
+}
+#lorem
+{
+    width: 90vh;
+    height: 85vh;
+    padding: 20px;
+	margin-top: 6vh;
+	font-size: 3vh;
+    text-align: justify;
+	color: white;
+	font-family: 'Lora', serif;
+}
+#lorem1
+{
+    width: 90vh;
+    height: 85vh;
+    padding: 20px;
+	margin-top: 6vh;
+	font-size: 3vh;
+    text-align: justify;
+	color: white;
+	font-family: 'Lora', serif;
+}
+.active {
+    font-weight: 700;
+}
+#lorem::first-letter {
+    font-size: 150%;
+}
+.href_text {
+    background-color: aliceblue;
+height: 90%;
+width: 90%;
+text-align: center;
+margin-top: -365px;
+margin-left: 30px;
+	font-size: 50px;
+	overflow: hidden;
+position: relative;
+z-index: 10;
+}
+#show_text {
+	padding-top: 5vh;
+	font-size: 7vh;
+    color: white;
+    margin-top: 15vh;
+    margin-left: 6vw;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-right: 6vw;
+    text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 10vh;
+  width: 5vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+    margin-left: 5vw;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+#omnie_text
+{
+	margin-top: 5vh;
+	font-size: 2.5vh;
+	color:black;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+#omnie_text::first-letter {
+    margin-left: 4vw;
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+}
+#about_projects {
+	font-size: 2.5vh;
+	color:black;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+#copyright {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .10em; /* Adjust as needed */
+font-size: 2vh;
+    color: #696969;
+    margin-top: 7vh;
+    margin-left: 30vw;
+    text-shadow: 0 0 0.4vh black;
+  animation: 
+    typing 10s steps(90, end),
+    blink-caret 1.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+#add_info
+{
+    font-size: 2.5vh;
+	color:black;
+	font-family: 'Rubik', sans-serif;
+    text-align:center;
+}
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+   top: 40vh;
+    left: 83vw;
+  width: auto;
+    transform: translate(-60%, -40%);  
+}
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+
+.close {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+    #all_quotes {
+        margin-top: 120vh;
+    }
+    #monitor {
+        margin-top: -70vh;
+    }
+    #monitor1 {
+        margin-top: -125vh;
+    }
+    #omnie_text {
+        margin-top: 70vh;
+    }
+    #icon_container {
+        margin-top: 0vh;
+    }
+    
+    #copyright {
+        margin-top: -10vh;
+        margin-left: 10vh;
+    }
+    #lorem {
+        margin-top: 0vh;
+    }
+    #add_info {
+        margin-top: 20vh;
+    }
+}

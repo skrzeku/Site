@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+    <meta name="keywords" content="Paweł Skrzeszewski">
+      
+    <title>Portfolio Paweł Skrzeszewski</title>
+
+    <!-- Bootstrap -->
+       
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      
+	<!-- Font Awasome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Pacifico|Vollkorn|Lora" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+    
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      
+      <!-- Scripts JS -->
+     <script src="js/timer.js"></script>
+       <script src="js/modal.js"></script>
+       <script src="js/flags.js"></script>
+       
+	<script src="js/quotes.js"></script>
+     <!-- script translator -->
+      <script src="js/translator.js"></script>
+	
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+      <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+<script src="js/jquery/jquery-1.8.2.js"></script>
+      <script src="js/elementReady.js"></script>
+    
+	<!-- styles -->
+	<link rel="stylesheet" href="css/loader.css">
+    <link href="translatejs.css" rel="stylesheet">
+      <link href="js/jquery/jquery-ui.css" rel="stylesheet" type="text/css">
+      
+  <!-- Scripts -->
+       
+       
+	<script type="text/javascript"> 
+	 $(document).ready(function (){
+    
+	 window.setTimeout('slide_quotes();', 3000);
+     window.setTimeout('jump_flags1 ();', 3000);
+    window.setTimeout('jump_flags2 ();', 4500);
+         translatore();
+        
+   
+	 });
+        
+        function jump_flags1 () {
+            setInterval('jump_flag1 ();', 5000);
+        };
+         function jump_flags2 () {
+            setInterval('jump_flag2 ();', 5000);
+        };
+        
+	function slide_quotes () {
+	setInterval('changequotes();', 14000);
+	};
+	</script>
+       
+	
+	<!-- tooltip -->
+	<script type="text/javascript"> 
+$(window).on("load", function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+  
+  </head>
+  <body onload="odliczanie();">
+
+
+
+<nav class="navbar navbar-fixed-top navbar-inverse" id="nav" style="background-color: transparent;">
+<div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mysNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" id="black_font">Paweł Skrzeszewski</a>
+    </div>
+<div class="collapse navbar-collapse" id="mysNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html" class="trn"  id="black_font">Główna</a></li>
+        <li><a href="omnie.html" class="trn" id="black_font">O mnie</a></li>
+      <li><a href="portfolio.html" class="trn"  id="black_font">Portfolio</a></li>
+      <li class="active"><a href="kontakt.html" class="trn">Kontakt</a></li>
+    </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li> <div id="zegar"> 12:00:00</div></li>
+    
+            <li> <a href="#" id="flag1" class="lang_selector trn" data-value="pl"><img src="image/pl.png" style="width: 22px;" id="f1"></a></li>
+            <li> <a href="#" id="flag2" class="lang_selector trn" data-value="en"><img src="image/gb.png" style="width: 22px;"></a></li></ul>
+    
+</div>
+    </div>
+
+</nav>
+      
+<div class="container-fluid">
+ <div id="smallcontainer1" class="col-md-6">
+     <div id="icon_container" class="col-md-12">
+     <a href="#" class="fa" data-toggle="tooltip" title="Wyświtl adres facebook!" style="color:white;" id="face"><img src='http://icons.iconarchive.com/icons/yootheme/social-bookmark/512/social-facebook-box-blue-icon.png' style="width: 8vw;"></a>
+       <a href="#" class="fa" data-toggle="tooltip" title="Wyświetl adres gmail!" style="color:white;" id="gmail"><img src='http://icons.iconarchive.com/icons/dtafalonso/android-l/512/Gmail-icon.png' style="width: 9vw;"></a>
+    <a href="#" class="fa" data-toggle="tooltip" title="Wyświetl GitHub!" style="color:white;" id="git"><img src='https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67' style="width: 8vw;"></a>
+         <a href="#" class="fa" data-toggle="tooltip" title="Wyświetl adres linkedIn!" style="color:white;" id="linked"><img src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png' style="width: 8vw;"></a>
+     
+     </div>
+     
+     <!-- quotes -->
+<div class="col-md-12 rectangle" id="rec_contact"><p id="all_quotes" class="trn">"Biorąc pod uwagę aktualny, smutny stan naszych programów komputerowych, rozwijanie oprogramowania jest cały czas jeszcze czarną magią i nie może być jeszcze nazwane dziedziną inżynierii." - Bill Clinton</p></div>
+    
+    </div>
+<!-- right container javascrpits -->
+<div id="smallcontainer2" class="col-md-6 col-sm-12" style="background-color: transparent">
+    <div class="col-md-12 col-sm-12" id="monitor">
+        <p id="show_text"></p>
+        
+        
+
+
+</div> 
+      </div>
+   
+</div>
+
+<div id="copyright" class="trn col-md-12 col-sm-12 col-xs-12" > Copyright © 2017 Portfolio programisty - Paweł Skrzeszewski. Wszelkie prawa zastrzeżone. </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+<script src="js/monitor.js"></script>
+<script src="js/js/bootstrap.min.js"></script>
+    <script src="js/jquery.translate.js"></script>
+<script src="js/jquery.cookie.js"></script>
+  </body>
+</html>

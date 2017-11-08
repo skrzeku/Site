@@ -130,6 +130,15 @@ background-repeat: no-repeat;
 background-repeat: no-repeat;
     background-size: contain;
 }
+#monitor2 {
+    width: 100%;
+    margin-top: 2vh;
+    height: 390px;
+    background-image: url(monitor6.png);
+    background-color: transparent;
+background-repeat: no-repeat;
+    background-size: contain;
+}
 
 #image_ON {
     background-color: transparent;
@@ -141,8 +150,15 @@ background-repeat: no-repeat;
     opacity: 1;
   
 }
+
 #image_ON:hover {
     opacity: .5;
+}
+#my_image {
+    margin-top: 4vh;
+    margin-left: 10vw;
+    width: 19vw;
+    max-height: 310px;
 }
 #gma {
     
@@ -192,22 +208,26 @@ position: relative;
 z-index: 10;
 }
 #show_text {
-	padding-top: 5vh;
+	
 	font-size: 7vh;
     color: white;
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-left: 6vw;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     margin-right: 6vw;
     text-align: center;
 }
+.links {
+    font-size: 3vh;
+    color: black;
+}
+
 .fa {
   padding: 20px;
   font-size: 10vh;
   width: 5vw;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
     margin-left: 5vw;
 }
 .fa:hover {
@@ -267,6 +287,9 @@ font-size: 2vh;
 	font-family: 'Rubik', sans-serif;
     text-align:center;
 }
+last_info {
+    text-align:right;
+}
 #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -324,17 +347,23 @@ font-size: 2vh;
         margin-top: -70vh;
     }
     #monitor1 {
-        margin-top: -125vh;
+        margin-top: -129vh;
     }
     #omnie_text {
         margin-top: 70vh;
     }
     #icon_container {
-        margin-top: 0vh;
+        margin-top: 1vh;
+    }
+    #site {
+        margin-left: 10vw;
+    }
+    #show_text {
+        padding-top: 20vh;
     }
     
     #copyright {
-        margin-top: -10vh;
+        
         margin-left: 10vh;
     }
     #lorem {
@@ -342,5 +371,15 @@ font-size: 2vh;
     }
     #add_info {
         margin-top: 20vh;
+    }
+    #my_image {
+    width: 30vw;
+    margin-left: 25vw;
+    }
+    .fa {
+        width: 25vw;
+    }
+    #monitor2 {
+        margin-top: -220vh;
     }
 }

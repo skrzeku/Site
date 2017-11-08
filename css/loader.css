@@ -261,8 +261,11 @@ z-index: 10;
   letter-spacing: .10em; /* Adjust as needed */
 font-size: 2vh;
     color: #696969;
+    position:static;
+    bottom: 0;
     margin-top: 7vh;
     margin-left: 30vw;
+    max-width: 90%;
     text-shadow: 0 0 0.4vh black;
   animation: 
     typing 10s steps(90, end),
@@ -336,12 +339,12 @@ last_info {
     transition: 0.3s;
 }
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 750px){
     .modal-content {
         width: 100%;
     }
     #all_quotes {
-        margin-top: 120vh;
+        margin-top: 70vh;
     }
     #monitor {
         margin-top: -70vh;

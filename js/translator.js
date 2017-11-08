@@ -133,7 +133,8 @@ window.translatore = function ()
             console.log("runcookies");
         }
         else {
-            alert ("error");
+            $.cookie('lang', 'pl', { expires: 7 });
+          translates();
         }
     };
     checkcookies ();
@@ -153,7 +154,7 @@ window.translatore = function ()
       if (lang =="pl"){
           
         $.cookie('lang', 'pl', { expires: 7 });
-          translates();
+          
           
       }
       

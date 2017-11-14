@@ -96,7 +96,7 @@ background-color: transparent;
 #all_quotes
 {
     position: relative;
-    font-size: 3vh;
+    font-size: 1.5vw;
 	text-align: justify;
 	font-family: 'Gloria Hallelujah', cursive;
 	color: black;
@@ -169,10 +169,9 @@ background-repeat: no-repeat;
 }
 #lorem
 {
-    width: 90vh;
-    height: 85vh;
-    padding: 20px;
+    max-width: 90vw;
 	margin-top: 6vh;
+    padding: 1vw;
 	font-size: 3vh;
     text-align: justify;
 	color: white;
@@ -180,11 +179,10 @@ background-repeat: no-repeat;
 }
 #lorem1
 {
-    width: 90vh;
-    height: 85vh;
+    max-width: 90vw;
     padding: 20px;
 	margin-top: 6vh;
-	font-size: 3vh;
+	font-size: 3vw;
     text-align: justify;
 	color: white;
 	font-family: 'Lora', serif;
@@ -208,20 +206,30 @@ position: relative;
 z-index: 10;
 }
 #show_text {
-	
-	font-size: 7vh;
+	font-size: 4vw;
     color: white;
     margin-top: 10vh;
-    margin-left: 6vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin-right: 6vw;
-    text-align: center;
+    text-align: justify;
+
 }
-.links {
-    font-size: 3vh;
-    color: black;
+#showin_text {
+	font-size: 1.8vw;
+    color: white;
+    padding: 2vh;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: justify;
+
 }
 
+.links {
+    font-size: 1.5vw;
+    color: black;
+    font-weight: 600;
+    
+}
 .fa {
   padding: 20px;
   font-size: 10vh;
@@ -236,7 +244,7 @@ z-index: 10;
 #omnie_text
 {
 	margin-top: 5vh;
-	font-size: 2.5vh;
+	font-size: 1.5vw;
 	color:black;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -248,7 +256,7 @@ z-index: 10;
     font-family: 'Roboto', sans-serif;
 }
 #about_projects {
-	font-size: 2.5vh;
+	font-size: 1.5vw;
 	color:black;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -259,13 +267,13 @@ z-index: 10;
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: .10em; /* Adjust as needed */
-font-size: 2vh;
+font-size: 1vw;
     color: #696969;
     position:static;
     bottom: 0;
     margin-top: 7vh;
-    margin-left: 30vw;
-    max-width: 90%;
+    margin-left: 20vw;
+    max-width: 90vw;
     text-shadow: 0 0 0.4vh black;
   animation: 
     typing 10s steps(90, end),
@@ -285,7 +293,7 @@ font-size: 2vh;
 }
 #add_info
 {
-    font-size: 2.5vh;
+    font-size: 1.5vw;
 	color:black;
 	font-family: 'Rubik', sans-serif;
     text-align:center;
@@ -339,21 +347,25 @@ last_info {
     transition: 0.3s;
 }
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 750px){
+@media only screen and (min-width: 376px) and (max-width: 680px){
     .modal-content {
         width: 100%;
     }
     #all_quotes {
-        margin-top: 70vh;
+        font-size: 3vw;
+        margin-left: -5vw;
+        margin-top: 175vh;
     }
     #monitor {
-        margin-top: -70vh;
+        margin-top: -100vh;
     }
-    #monitor1 {
-        margin-top: -129vh;
+   #monitor1 {
+        margin-top: -180vh;
     }
-    #omnie_text {
-        margin-top: 70vh;
+   #omnie_text {
+        margin-left: -5vw;
+       font-size: 2vw;
+        margin-top: 100vh;  /* +40vh */
     }
     #icon_container {
         margin-top: 1vh;
@@ -362,18 +374,31 @@ last_info {
         margin-left: 10vw;
     }
     #show_text {
-        padding-top: 20vh;
+       margin-top: 10vh;
+        font-size: 5vw;
+        max-width: 85vw;
+        margin-left: 5vw;
+        text-align: justify;
+    }
+    #showin_text {
+        font-size: 3vw;
+       margin-top: 30vh;
+        max-width: 85vw;
+        text-align: justify;
     }
     
-    #copyright {
-        
-        margin-left: 10vh;
+   #copyright {
+        margin-left: 1vw;
+       font-size: 1.8vw;
     }
     #lorem {
-        margin-top: 0vh;
+        font-size: 2.5vw;
+        margin-left: 1vw;
+        width: 85vw;
     }
     #add_info {
-        margin-top: 20vh;
+        margin-top: 30vh;
+        font-size: 2vw;
     }
     #my_image {
     width: 30vw;
@@ -383,6 +408,77 @@ last_info {
         width: 25vw;
     }
     #monitor2 {
-        margin-top: -220vh;
+        margin-top: -130vh; 
+    }
+    .links {
+        font-size: 3vw;
+    }
+    #my_image {
+        margin-top: 5vh;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #monitor2 {
+        margin-top: -80vh; /* ok */
+    }
+    #copyright {
+        margin-left: 0vw;
+        font-size: 2vw;
+        margin-top: 2vw;
+        width: 80%;
+    }
+    #monitor {
+        margin-top: -50vh; /* -20 vh */
+    }
+    #monitor1 {
+        margin-top: -110vh;
+    } 
+    #omnie_text {
+        margin-left: -5vw;
+        font-size: 3vw;
+        margin-top: 50vh;
+    }
+    #lorem {
+        font-size: 3vw; /* +1 vh */
+        max-width: 85vw;
+    }
+    #all_quotes {
+        margin-left: -5vw;
+        font-size: 4vw;
+        margin-top: 80vh;
+    }
+    
+    #add_info {
+        margin-top: 100vh;
+        font-size: 2.2vw;
+    }
+    .fa {
+        width: 25vw;
+        
+    }
+    
+    .links {
+        font-size: 4vw;
+        width: 15vw;
+        
+    }
+    #show_text {
+        margin-top: 10vh;
+        font-size: 5vw;
+        max-width: 85vw;
+        text-align: justify;
+    }
+    #showin_text {
+        margin-top: 1vh;
+        font-size: 2vw;
+        max-width: 85vw;
+        text-align: justify;
+    }
+    #about_projects {
+        font-size: 2.5vw;
+    }
+    
+    .contact_icons {
+        width: 12vw;  /* was 9-11 vw */
     }
 }

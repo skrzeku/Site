@@ -113,9 +113,10 @@ background-color: transparent;
 	color: blue;
 }
 #monitor {
+    position: relative;
     width: 100%;
     margin-top: 2vh;
-    height: 390px;
+    height: 100vh;
     background-image: url(monitor6.png);
     background-color: transparent;
 background-repeat: no-repeat;
@@ -124,7 +125,7 @@ background-repeat: no-repeat;
 #monitor1 {
     width: 100%;
     margin-top: 2vh;
-    height: 390px;
+    height: 100vh;
     background-image: url(monitor6.png);
     background-color: transparent;
 background-repeat: no-repeat;
@@ -132,8 +133,9 @@ background-repeat: no-repeat;
 }
 #monitor2 {
     width: 100%;
+    position: relative;
     margin-top: 2vh;
-    height: 390px;
+    height: 100vh;
     background-image: url(monitor6.png);
     background-color: transparent;
 background-repeat: no-repeat;
@@ -142,10 +144,11 @@ background-repeat: no-repeat;
 
 #image_ON {
     background-color: transparent;
-    width:30%;
-    background-size: contain;
-    margin-top: 15%;
-    margin-left: 35%;
+  position: absolute;
+  top: 10%;
+    left: 30%;
+    width:35%;
+    display: block;
     color: white;
     opacity: 1;
   
@@ -172,7 +175,7 @@ background-repeat: no-repeat;
     max-width: 90vw;
 	margin-top: 6vh;
     padding: 1vw;
-	font-size: 3vh;
+	font-size: 1.7vw;
     text-align: justify;
 	color: white;
 	font-family: 'Lora', serif;
@@ -231,8 +234,7 @@ z-index: 10;
     
 }
 .fa {
-  padding: 20px;
-  font-size: 10vh;
+  padding: 1vh;
   width: 5vw;
   text-align: center;
   text-decoration: none;
@@ -240,6 +242,9 @@ z-index: 10;
 }
 .fa:hover {
     opacity: 0.7;
+}
+#dd1 {
+    font-size: 1.2vw;
 }
 #omnie_text
 {
@@ -255,6 +260,11 @@ z-index: 10;
     font-size: 150%;
     font-family: 'Roboto', sans-serif;
 }
+.dt_projects {
+    font-size: 1.5vw;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 5vw;
+}
 #about_projects {
 	font-size: 1.5vw;
 	color:black;
@@ -263,16 +273,16 @@ z-index: 10;
     text-align: justify;
 }
 #copyright {
+    margin-left: 20vw;
+    position: fixed;
+    bottom: 0;
+
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: .10em; /* Adjust as needed */
 font-size: 1vw;
     color: #696969;
-    position:static;
-    bottom: 0;
-    margin-top: 7vh;
-    margin-left: 20vw;
     max-width: 90vw;
     text-shadow: 0 0 0.4vh black;
   animation: 
@@ -346,7 +356,7 @@ last_info {
     font-weight: bold;
     transition: 0.3s;
 }
-/* 100% Image Width on Smaller Screens */
+/* 100% Image Width on Smaller Screens 
 @media only screen and (min-width: 376px) and (max-width: 680px){
     .modal-content {
         width: 100%;
@@ -365,7 +375,7 @@ last_info {
    #omnie_text {
         margin-left: -5vw;
        font-size: 2vw;
-        margin-top: 100vh;  /* +40vh */
+        margin-top: 100vh; 
     }
     #icon_container {
         margin-top: 1vh;
@@ -417,9 +427,10 @@ last_info {
         margin-top: 5vh;
     }
 }
+/*
 @media only screen and (max-width: 375px) {
     #monitor2 {
-        margin-top: -80vh; /* ok */
+        margin-top: -80vh; 
     }
     #copyright {
         margin-left: 0vw;
@@ -428,7 +439,7 @@ last_info {
         width: 80%;
     }
     #monitor {
-        margin-top: -50vh; /* -20 vh */
+        margin-top: -50vh; 
     }
     #monitor1 {
         margin-top: -110vh;
@@ -439,7 +450,7 @@ last_info {
         margin-top: 50vh;
     }
     #lorem {
-        font-size: 3vw; /* +1 vh */
+        font-size: 3vw; 
         max-width: 85vw;
     }
     #all_quotes {
@@ -479,6 +490,6 @@ last_info {
     }
     
     .contact_icons {
-        width: 12vw;  /* was 9-11 vw */
+        width: 12vw;  
     }
-}
+} */

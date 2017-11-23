@@ -101,11 +101,11 @@ window.translatore = function ()
       '"Ludzie myślą, że informatyka jest dziedziną geniuszy, ale w rzeczywistości jest na odwrót - wielu ludzi robiących rzeczy bazujące na sobie - jak ściana z mini-kamieni" - Donald Knuth': {
           en: '"People think that computer science is the art of geniuses, but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones." - Donald Knuth'
       },
-         'Strona została wykonana przy użyciu Html5, CSS3 oraz Javascriptu z biblioteką Jquery. Strona dostosowana jest również do wszystkich urządzeń mobilnych poprzez użycie  bibliotek Bootstrap 3, który umożliwia tworzenie responsywnych stron. Zostało zaczerpnięte również kilka ogólno dostępnych pluginów m.in. TwinLite oraz translate.js. Kod źródłowy do strony znajduje się w linku "Site" po lewej stronie' : {
-            en: 'The site has been made using Html5, CSS3 and Javascript with Jquery. Page is also adapted to all mobile devices through the use of Bootstrap libraries 3 that allows you to create responsive pages. Has been taken also some general available plug-ins m.in. TwinLite and translate.js. The source code for the page is in the link "Site" on the left side'
+         'Strona została wykonana przy użyciu Html5, CSS3 oraz Javascriptu z biblioteką Jquery. Strona dostosowana jest również do wszystkich urządzeń mobilnych poprzez użycie  bibliotek Bootstrap 3, który umożliwia tworzenie responsywnych stron. Zostało zaczerpnięte również kilka ogólno dostępnych pluginów m.in. TwinLite oraz translate.js. Kod źródłowy do strony znajduje się w linku "Site" w dolnej części strony' : {
+            en: 'The site has been made using Html5, CSS3 and Javascript with Jquery. Page is also adapted to all mobile devices through the use of Bootstrap libraries 3 that allows you to create responsive pages. Has been taken also some general available plug-ins m.in. TwinLite and translate.js. The source code for the page is in the link "Site" on the bottom'
         },
-         'Gra okienkowa kółko i krzyżyk napisana w języku java w środowisku IDE przy użyciu Eclipse. W grze dokładnie widzimy który gracz wybiera pole w tym momencie, został ułożony mechanizm zwycięstwa oraz możliwość zrestartowania gry w dowolnym momencie jak i po jej zakończeniu. Kod źródłowy z grą znajduje się w linku "java-game" po lewej stronie' : {
-             en: 'Windows game Tic-Tac-Toe written in java in the Environment IDE using Eclipse. In the game exactly, we see that the player selects the field at this point, has been laid out the mechanism of the victory and the ability to restart the game at any time as and when it is completed. The source code of the game is in the link "java-game" on the left side'
+         'Gra okienkowa kółko i krzyżyk napisana w języku java w środowisku IDE przy użyciu Eclipse. W grze dokładnie widzimy który gracz wybiera pole w tym momencie, został ułożony mechanizm zwycięstwa oraz możliwość zrestartowania gry w dowolnym momencie jak i po jej zakończeniu. Kod źródłowy z grą znajduje się w linku "java-game" w dolnej części strony' : {
+             en: 'Windows game Tic-Tac-Toe written in java in the Environment IDE using Eclipse. In the game exactly, we see that the player selects the field at this point, has been laid out the mechanism of the victory and the ability to restart the game at any time as and when it is completed. The source code of the game is in the link "java-game" on the bottom'
          },
          " oraz na moim profilu" : {
            en: " and on my profile"  
@@ -113,7 +113,10 @@ window.translatore = function ()
          projects_info : {
              pl: 'Obecna strona jest moim najnowszym projektem. Poniżej znajdziecie moje wszystkie dotychczas wykonane projekty wraz z opisem narzędzi i technologii potrzebnych do ich wykonania. Projekty 2017: ',
              en: 'The current site is my latest project. Below you can find all my previously projects with a description of the tools and technologies needed for their implementation. Projects 2017: '
-         }
+         },
+         "- Projekt w trakcie realizacji!" : {
+         en: "- Project still in process"
+     }
    
   };
     var d = {

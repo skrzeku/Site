@@ -12,8 +12,8 @@
     
   var timeline;
     
-    var tictext = 'Gra okienkowa kółko i krzyżyk napisana w języku java w środowisku IDE przy użyciu Eclipse. W grze dokładnie widzimy który gracz wybiera pole w tym momencie, został ułożony mechanizm zwycięstwa oraz możliwość zrestartowania gry w dowolnym momencie jak i po jej zakończeniu. Kod źródłowy z grą znajduje się w linku "java-game" po lewej stronie';
-    var sitetext = 'Strona została wykonana przy użyciu Html5, CSS3 oraz Javascriptu z biblioteką Jquery. Strona dostosowana jest również do wszystkich urządzeń mobilnych poprzez użycie  bibliotek Bootstrap 3, który umożliwia tworzenie responsywnych stron. Zostało zaczerpnięte również kilka ogólno dostępnych pluginów m.in. TwinLite oraz translate.js. Kod źródłowy do strony znajduje się w linku "Site" po lewej stronie';
+    var tictext = 'Gra okienkowa kółko i krzyżyk napisana w języku java w środowisku IDE przy użyciu Eclipse. W grze dokładnie widzimy który gracz wybiera pole w tym momencie, został ułożony mechanizm zwycięstwa oraz możliwość zrestartowania gry w dowolnym momencie jak i po jej zakończeniu. Kod źródłowy z grą znajduje się w linku "java-game" w dolnej części strony';
+    var sitetext = 'Strona została wykonana przy użyciu Html5, CSS3 oraz Javascriptu z biblioteką Jquery. Strona dostosowana jest również do wszystkich urządzeń mobilnych poprzez użycie  bibliotek Bootstrap 3, który umożliwia tworzenie responsywnych stron. Zostało zaczerpnięte również kilka ogólno dostępnych pluginów m.in. TwinLite oraz translate.js. Kod źródłowy do strony znajduje się w linku "Site" w dolnej części strony';
   function buildTimeline() {
       
     timeline = new TimelineMax({

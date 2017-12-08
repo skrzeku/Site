@@ -7,6 +7,12 @@ body {
     overflow-x:hidden;
 
   }
+[class*="col-"]{
+        background-color: rgba(255,195,50,.3);
+        border: 1px solid rgba(255,195,50,.4);
+        padding: 10px;
+}
+
 #loader {
     width:100%;
     height:100%;
@@ -18,6 +24,10 @@ body {
     color: #eee;
     text-align: center;
 }
+#smallcontainer1 {
+    
+    
+}
 #black_font {
     color: black;
     font-weight: 800;  
@@ -25,18 +35,19 @@ body {
 .navbar-collapse {
     color: black;
 }
+.rec {
+   
+    margin-top: 360px;
+    padding: 15px;
+}
+#smallcontainer2 {
+    padding: 20px;
+}
 #nav_main {
     color: black;
 }
-#smallcontainer1
-{
-height: 500px;
-}
-#smallcontainer2
-{
-height: 500px;
-background-color: transparent;
-
+#text {
+    padding: 15px;
 }
 #navbar-top
 {
@@ -73,14 +84,14 @@ background-color: transparent;
 }
 .rectangle 
 {
-	margin-top: 58vh;
+	
 	height: 29vh;
     background-color: transparent;
     border-style: hidden;	
 }
 #site
 {
-    padding-left: 50px;
+margin-left: 3vw;
     
 }
 
@@ -94,9 +105,10 @@ background-color: transparent;
     margin-top: 30vh;
 }
 #all_quotes
-{
-    position: relative;
-    font-size: 1.5vw;
+{    
+    
+    float: none;
+    font-size: 2rem;
 	text-align: justify;
 	font-family: 'Gloria Hallelujah', cursive;
 	color: black;
@@ -134,8 +146,8 @@ background-repeat: no-repeat;
 #monitor2 {
     width: 100%;
     position: relative;
-    margin-top: 2vh;
-    height: 100vh;
+    padding: 35px;
+    height: 78vh;
     background-image: url(monitor6.png);
     background-color: transparent;
 background-repeat: no-repeat;
@@ -147,7 +159,7 @@ background-repeat: no-repeat;
   position: absolute;
   top: 10%;
     left: 30%;
-    width:35%;
+    width:32%;
     display: block;
     color: white;
     opacity: 1;
@@ -171,11 +183,9 @@ background-repeat: no-repeat;
 	margin-top: 6vh;
 }
 #lorem
-{
+{   
     max-width: 90vw;
-	margin-top: 6vh;
-    padding: 1vw;
-	font-size: 1.7vw;
+	font-size: 2rem;
     text-align: justify;
 	color: white;
 	font-family: 'Lora', serif;
@@ -236,9 +246,9 @@ z-index: 10;
 .fa {
   padding: 1vh;
   width: 5vw;
-  text-align: center;
+  display: inline;
   text-decoration: none;
-    margin-left: 5vw;
+
 }
 .fa:hover {
     opacity: 0.7;
@@ -273,7 +283,7 @@ z-index: 10;
     text-align: justify;
 }
 #copyright {
-    margin-left: 20vw;
+    margin-left: 300px;
     position: fixed;
     bottom: 0;
 
@@ -281,7 +291,7 @@ z-index: 10;
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: .10em; /* Adjust as needed */
-font-size: 1vw;
+font-size: 1.4rem;
     color: #696969;
     max-width: 90vw;
     text-shadow: 0 0 0.4vh black;
@@ -356,131 +366,47 @@ last_info {
     font-weight: bold;
     transition: 0.3s;
 }
-/* 100% Image Width on Smaller Screens 
-@media only screen and (min-width: 376px) and (max-width: 680px){
+
+ 100% Image Width on Smaller Screens 
+@media only screen and (max-width: 520px)  {
     .modal-content {
         width: 100%;
     }
-    #all_quotes {
-        font-size: 3vw;
-        margin-left: -5vw;
-        margin-top: 175vh;
-    }
-    #monitor {
-        margin-top: -100vh;
-    }
-   #monitor1 {
-        margin-top: -180vh;
-    }
-   #omnie_text {
-        margin-left: -5vw;
-       font-size: 2vw;
-        margin-top: 100vh; 
-    }
-    #icon_container {
-        margin-top: 1vh;
-    }
-    #site {
-        margin-left: 10vw;
-    }
-    #show_text {
-       margin-top: 10vh;
-        font-size: 5vw;
-        max-width: 85vw;
-        margin-left: 5vw;
-        text-align: justify;
-    }
-    #showin_text {
-        font-size: 3vw;
-       margin-top: 30vh;
-        max-width: 85vw;
-        text-align: justify;
-    }
-    
-   #copyright {
-        margin-left: 1vw;
-       font-size: 1.8vw;
-    }
-    #lorem {
-        font-size: 2.5vw;
-        margin-left: 1vw;
-        width: 85vw;
-    }
-    #add_info {
-        margin-top: 30vh;
-        font-size: 2vw;
-    }
-    #my_image {
-    width: 30vw;
-    margin-left: 25vw;
-    }
-    .fa {
-        width: 25vw;
-    }
-    #monitor2 {
-        margin-top: -130vh; 
-    }
-    .links {
-        font-size: 3vw;
-    }
-    #my_image {
-        margin-top: 5vh;
-    }
 }
-/*
-@media only screen and (max-width: 375px) {
-    #monitor2 {
-        margin-top: -80vh; 
-    }
+
+@media only screen and (max-width: 425px) {
+   
     #copyright {
-        margin-left: 0vw;
         font-size: 2vw;
-        margin-top: 2vw;
-        width: 80%;
+       
     }
-    #monitor {
-        margin-top: -50vh; 
-    }
-    #monitor1 {
-        margin-top: -110vh;
-    } 
+  
     #omnie_text {
-        margin-left: -5vw;
         font-size: 3vw;
-        margin-top: 50vh;
     }
     #lorem {
         font-size: 3vw; 
         max-width: 85vw;
     }
     #all_quotes {
-        margin-left: -5vw;
         font-size: 4vw;
-        margin-top: 80vh;
     }
-    
     #add_info {
-        margin-top: 100vh;
         font-size: 2.2vw;
     }
     .fa {
-        width: 25vw;
-        
+        width: 10vw;
     }
-    
     .links {
         font-size: 4vw;
-        width: 15vw;
-        
+        width: 10vw;
     }
     #show_text {
-        margin-top: 10vh;
         font-size: 5vw;
         max-width: 85vw;
         text-align: justify;
     }
     #showin_text {
-        margin-top: 1vh;
         font-size: 2vw;
         max-width: 85vw;
         text-align: justify;
@@ -488,8 +414,7 @@ last_info {
     #about_projects {
         font-size: 2.5vw;
     }
-    
     .contact_icons {
         width: 12vw;  
     }
-} */
+} 

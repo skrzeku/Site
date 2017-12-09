@@ -38,9 +38,10 @@
       
     
 	<!-- styles -->
-	<link rel="stylesheet" href="css/loader.css">
-    <link href="translatejs.css" rel="stylesheet">
-      <link href="js/jquery/jquery-ui.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/loader.css" media="screen">
+    <link href="translatejs.css" rel="stylesheet" media="screen">
+      <link href="js/jquery/jquery-ui.css" rel="stylesheet" type="text/css" media="screen">
+       <link rel="stylesheet" href="css/responsive.css" media="screen">
       
   <!-- Scripts -->
        
@@ -114,15 +115,11 @@ $(window).on("load", function(){
 
 <div class="container-fluid">
     <div class="row">
-<div id="smallcontainer1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-<div id="text">
-    <p id="omnie_text" class="trn" data-trn-key="o_mnie">Nazywam się Paweł Skrzeszewski. Ukończyłem Uniwersytet Warmińsko-Mazurski na Wydziale Ekonomicznym. Obroniłem tytuł inzyniera na kierunku Zarządzania i Inżynierii Produkcji. W trakcie mojej edukacji zdobyłem również tytuł technika ekonomisty w Zespole Szkół Ekonomicznych w Olsztynie. Mogą państwo sobie zadawać pytanie dlaczego właśnie informatyka? Odpowiedź na to pytanie zajęła mi wiele lat. Przez cały okres mojej edukacji zastanawiałem się co chciałbym robić w swoim życiu.<br>
-        Od zawsze, a mam już 25 wiosen za sobą facynowała mnie informatyka, ale niestety potrzebowałem ukończyć naukę aby  zrozumieć że to co chciałbym robić przez reszte swojego życia musi byc  związanę z branżą IT. 2 lata temu zdecydowałem się bardziej poświęcić prawdziwej nauce programowania. Chciałem z dnia na dzień poznawać coraz to nowe rzeczy, od postaw do rzeczy coraz to bardziej skomplikowanych, a pisanie kolejnych linijek kodu i spędzanie kolejnych godzin przy komputerze sprawiało coraz to większą satysfakcję. Stale poszerzam swoją wiedzę uczestnicząc w różnego rodzaju kursach programowania, konferencjach, e-lerningach, czytaniu dokumentacji technicznej etc. Ta strona jest tylko początkiem mojej ciężkiej pracy i zalążkiem tego co potrafię. Wiedza którą posiadam pozwala na wykonywanie interaktywnych stron internetowych, specjalnie dostosowanych do użytkownika jak i wszystkich urządzeń mobinych. 
-    </p>
-     
-    </div>
-
-<!-- Images -->
+        <div id="smallcontainer2" class="col-lg-12 col-md-12 col-sm-12" style="background-color: transparent">
+<div id="monitor1"><img src="image/Zdjecie%20pawel.png" id="my_image" style="display: none;">
+<p id="lorem_off"><a href="#"><img src="image/button.png" id="image_ON"></a></p>
+</div> <div id="text">
+            <!-- Images -->
 <img id="myImg" src="image/html5.png" alt="HTML5 siemano sosso" style="display: none">
 <img id="myImg1" src="image/css3.png" alt="CSS3" style="display: none">
 <img id="myImg2" src="image/Bootstrap.png" alt="RWD" style="display: none">
@@ -140,19 +137,16 @@ $(window).on("load", function(){
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
 </div>
-      
-   
-</div> 
-
-<!-- right container javascrpits -->
-<div id="smallcontainer2" class="col-md-6 col-sm-12" style="background-color: transparent">
-<div id="monitor1"><img src="image/Zdjecie%20pawel.png" id="my_image" style="display: none;">
-<p id="lorem_off"><a href="#"><img src="image/button.png" id="image_ON"></a></p>
-
-</div> 
+     <p id="omnie_text" class="trn lorem" data-trn-key="o_mnie">Nazywam się Paweł Skrzeszewski. Ukończyłem Uniwersytet Warmińsko-Mazurski na Wydziale Ekonomicznym. Obroniłem tytuł inzyniera na kierunku Zarządzania i Inżynierii Produkcji. W trakcie mojej edukacji zdobyłem również tytuł technika ekonomisty w Zespole Szkół Ekonomicznych w Olsztynie. Mogą państwo sobie zadawać pytanie dlaczego właśnie informatyka? Odpowiedź na to pytanie zajęła mi wiele lat. Przez cały okres mojej edukacji zastanawiałem się co chciałbym robić w swoim życiu.<br>
+        Od zawsze, a mam już 25 wiosen za sobą facynowała mnie informatyka, ale niestety potrzebowałem ukończyć naukę aby  zrozumieć że to co chciałbym robić przez reszte swojego życia musi byc  związanę z branżą IT. 2 lata temu zdecydowałem się bardziej poświęcić prawdziwej nauce programowania. Chciałem z dnia na dzień poznawać coraz to nowe rzeczy, od postaw do rzeczy coraz to bardziej skomplikowanych, a pisanie kolejnych linijek kodu i spędzanie kolejnych godzin przy komputerze sprawiało coraz to większą satysfakcję. Stale poszerzam swoją wiedzę uczestnicząc w różnego rodzaju kursach programowania, konferencjach, e-lerningach, czytaniu dokumentacji technicznej etc. Ta strona jest tylko początkiem mojej ciężkiej pracy i zalążkiem tego co potrafię. Wiedza którą posiadam pozwala na wykonywanie interaktywnych stron internetowych, specjalnie dostosowanych do użytkownika jak i wszystkich urządzeń mobinych. 
+    </p></div>
       </div>
 
-<div class="se" id="add_info">
+
+<!-- down row javascrpits -->
+
+<aside class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lorem" id="add_info">
 <dl>
     <dt class="trn">Umiejętności: Poziom zaawansowany</dt>
     <dd><a href="#" class="modals" id="html">HTML5</a></dd>
@@ -177,6 +171,7 @@ $(window).on("load", function(){
 
 
 </div>
+    </aside>
     </div>
 </div>
       <footer class="row">

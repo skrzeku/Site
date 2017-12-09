@@ -7,12 +7,13 @@ body {
     overflow-x:hidden;
 
   }
+/*
 [class*="col-"]{
         background-color: rgba(255,195,50,.3);
         border: 1px solid rgba(255,195,50,.4);
         padding: 10px;
 }
-
+*/
 #loader {
     width:100%;
     height:100%;
@@ -25,8 +26,7 @@ body {
     text-align: center;
 }
 #smallcontainer1 {
-    
-    
+
 }
 #black_font {
     color: black;
@@ -66,6 +66,9 @@ body {
 {
     padding-left: 5px;
     padding-top: 15px;
+}
+#text {
+    margin-right: auto;
 }
 
 #zegar
@@ -135,9 +138,12 @@ background-repeat: no-repeat;
     background-size: contain;
 }
 #monitor1 {
-    width: 100%;
-    margin-top: 2vh;
-    height: 100vh;
+    width: 50%;
+    position: relative;
+    float: right;
+    margin-left: 20px;
+    padding: 15px;
+    height: 58vh;
     background-image: url(monitor6.png);
     background-color: transparent;
 background-repeat: no-repeat;
@@ -157,8 +163,8 @@ background-repeat: no-repeat;
 #image_ON {
     background-color: transparent;
   position: absolute;
-  top: 10%;
-    left: 30%;
+  top: 80px;
+    left: 200px;
     width:32%;
     display: block;
     color: white;
@@ -182,14 +188,7 @@ background-repeat: no-repeat;
     padding: 20px;
 	margin-top: 6vh;
 }
-#lorem
-{   
-    max-width: 90vw;
-	font-size: 2rem;
-    text-align: justify;
-	color: white;
-	font-family: 'Lora', serif;
-}
+
 #lorem1
 {
     max-width: 90vw;
@@ -258,18 +257,22 @@ z-index: 10;
 }
 #omnie_text
 {
-	margin-top: 5vh;
-	font-size: 1.5vw;
 	color:black;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    text-align: justify;
+   
 }
 #omnie_text::first-letter {
-    margin-left: 4vw;
+    margin-left: 40px;
     font-size: 150%;
     font-family: 'Roboto', sans-serif;
 }
+.lorem {
+    font-size: 2rem;
+    width: auto;
+	color:white;;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+}
+
 .dt_projects {
     font-size: 1.5vw;
     font-family: 'Rubik', sans-serif;
@@ -313,9 +316,7 @@ font-size: 1.4rem;
 }
 #add_info
 {
-    font-size: 1.5vw;
 	color:black;
-	font-family: 'Rubik', sans-serif;
     text-align:center;
 }
 last_info {
@@ -374,47 +375,3 @@ last_info {
     }
 }
 
-@media only screen and (max-width: 425px) {
-   
-    #copyright {
-        font-size: 2vw;
-       
-    }
-  
-    #omnie_text {
-        font-size: 3vw;
-    }
-    #lorem {
-        font-size: 3vw; 
-        max-width: 85vw;
-    }
-    #all_quotes {
-        font-size: 4vw;
-    }
-    #add_info {
-        font-size: 2.2vw;
-    }
-    .fa {
-        width: 10vw;
-    }
-    .links {
-        font-size: 4vw;
-        width: 10vw;
-    }
-    #show_text {
-        font-size: 5vw;
-        max-width: 85vw;
-        text-align: justify;
-    }
-    #showin_text {
-        font-size: 2vw;
-        max-width: 85vw;
-        text-align: justify;
-    }
-    #about_projects {
-        font-size: 2.5vw;
-    }
-    .contact_icons {
-        width: 12vw;  
-    }
-} 

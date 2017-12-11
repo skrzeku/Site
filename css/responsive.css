@@ -17,6 +17,24 @@
         top: 70px;
         left: 160px;
     }
+    .navbar {
+        font-size: 1.7rem;
+    }
+    .min_img {
+        width: 140px;
+    }
+    #monitor {
+        height: 75vh;
+    }
+    .contact_img {
+    width: 110px;
+    }
+    #show_text {
+    font-size: 2.8rem;
+    }
+    #rec_contact {
+ margin-top: 170px;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 991px){
@@ -32,6 +50,11 @@
         padding: 30px;
 
     }
+     #monitor1 {
+        width: 100%;
+        margin-left: 0px;
+        
+    }
     .rec {
         padding: 40px;
         margin-top: 0px;
@@ -42,6 +65,24 @@
     #copyright {
         font-size: 1rem;
         margin-left: 150px;
+    }
+    .navbar {
+        font-size: 1.5rem;
+    }
+     .min_img {
+        width: 120px;
+    }
+    .agits {
+    margin: 20px;
+    }
+    .contact_img {
+    width: 90px;
+    }
+     #show_text {
+    font-size: 2.5rem;
+    }
+    #rec_contact {
+ margin-top: 140px;
     }
 }
 
@@ -75,12 +116,31 @@
         font-size: 0.7rem;
         margin-left: 80px;
     }
+    .navbar {
+        font-size: 1.4rem;
+    }
+     .min_img {
+        width: 100px;
+    }
+    .agits {
+    margin: 15px;
+    }
+    .contact_img {
+    width: 70px;
+    }
+     #show_text {
+    font-size: 2rem;
+    }
+    #rec_contact {
+ margin-top: 110px;
+    }
 }
 
 
 @media(max-width: 480px) {
     #all_quotes {
         font-size: 1rem;
+        margin-top: 5px;
     }
     
     #monitor2 {
@@ -109,4 +169,37 @@
     #text {
         padding: 2px;
     }
+    .navbar {
+        font-size: 1rem;
+    }
+     .min_img {
+        width: 70px;
+         margin: 5px;
+    }
+    #monitor {
+        width: 100%;
+        padding: 10px;
+    }
+    #projects_links {
+        margin-left: 50px;
+    }
+    .agits {
+    margin: 10px;
+    }
+    .contact_img {
+    width: 50px;
+    }
+     #show_text {
+    font-size: 1.6rem;
+    }
+    .lorem::first-letter {
+    margin-left: 5px;
+}
+    #showin_text {
+        font-size: 0.9rem;
+    }
+    #rec_contact {
+ margin-top: 50px;
+    }
+    
 }

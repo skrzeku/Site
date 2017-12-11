@@ -31,9 +31,10 @@
       
       
 	<!-- styles -->
-	<link rel="stylesheet" href="css/loader.css">
-    <link href="translatejs.css" rel="stylesheet">
-    <link href="js/jquery/jquery-ui.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/loader.css" media="screen">
+    <link href="translatejs.css" rel="stylesheet" media="screen">
+    <link href="js/jquery/jquery-ui.css" rel="stylesheet" type="text/css" media="screen">
+     <link rel="stylesheet" href="css/responsive.css" media="screen">
       
   
   <!-- Scripts -->
@@ -42,8 +43,8 @@
 	<script type="text/javascript"> 
 	 $(document).ready(function (){
 	 window.setTimeout('slide_quotes();', 3000);
-   //  window.setTimeout('jump_flags1 ();', 3000);
-   // window.setTimeout('jump_flags2 ();', 4500);
+     window.setTimeout('jump_flags1 ();', 3000);
+    window.setTimeout('jump_flags2 ();', 4500);
          translatore();
 	 });
         
@@ -102,21 +103,33 @@ $(window).on("load", function(){
 </nav>
       
 <div class="container-fluid">
+    <div class="row">
  <div id="smallcontainer1" class="col-md-6 col-sm-12">
-     <div id="icon_container" class="col-md-12 col-sm-12">
-         <p class="trn" data-trn-key="projects_info" id="about_projects">Obecna strona jest moim najnowszym projektem. Poniżej znajdziecie moje wszystkie dotychczas wykonane projekty wraz z opisem narzędzi i technologii potrzebnych do ich wykonania. Projekty 2017: </p>
+     <div id="icon_container" class="co">
+         <p class="trn lorem" data-trn-key="projects_info" id="about_projects">Obecna strona jest moim najnowszym projektem. Poniżej znajdziecie moje wszystkie dotychczas wykonane projekty wraz z opisem narzędzi i technologii potrzebnych do ich wykonania. Projekty 2017: </p>
          <!-- Small images of my projects -->
-         <a href="#" class="fa" data-toggle="tooltip" title="Gra w kółko i krzyżyk! [Java]" style="color:white;" id="tictactoe"><img src='image/tictactoe.png' style="width: 10vw"></a>
-         <a href="#" class="fa" data-toggle="tooltip" title="Moja strona internetowa! [Html,CSS,JS]" style="color:white;" id="site"><img src='image/strona1.png' style="width: 15vw"></a><br />
+         <a href="#" class="fa agits" data-toggle="tooltip" title="Gra w kółko i krzyżyk! [Java]" style="color:white;" id="tictactoe"><img src='image/tictactoe.png' class="min_img img-responsive"></a>
+         <a href="#" class="fa agits" data-toggle="tooltip" title="Moja strona internetowa! [Html,CSS,JS]" style="color:white;" id="site"><img src='image/strona1.png' class="min_img img-responsive"></a><br />
      
    
       
      </div>
      
      <!-- quotes -->
-<div class="col-md-12 rectangle" id="rec_contact" style="margin-top: 32vh;"><p id="all_quotes" class="trn">"Biorąc pod uwagę aktualny, smutny stan naszych programów komputerowych, rozwijanie oprogramowania jest cały czas jeszcze czarną magią i nie może być jeszcze nazwane dziedziną inżynierii." - Bill Clinton</p></div>
+<div class="rec" id="rec_contact"><p id="all_quotes" class="trn">"Biorąc pod uwagę aktualny, smutny stan naszych programów komputerowych, rozwijanie oprogramowania jest cały czas jeszcze czarną magią i nie może być jeszcze nazwane dziedziną inżynierii." - Bill Clinton</p></div>
+        
+        </div>
     
-      <div class="col-md-12" id="projects_links">
+<!-- right container javascrpits -->
+<div id="smallcontainer2" class="col-md-6 col-sm-12" style="background-color: transparent">
+    <div class="css" id="monitor">
+        <p id="showin_text" class="trn lorem"></p>
+</div> 
+      </div>
+    </div>
+    
+      <aside class="row">
+          <div class="lorem col-lg-12 col-md-12 col-sm-12 col-xs-12" id="projects_links">
           <dl>
           <dt class="dt_projects">Wykonane projekty:</dt>
               <dd><a href="https://github.com/skrzeku/java-game" class="links"><i class="fa fa-github" aria-hidden="true" style="font-size: 4vh"></i>java-game</a></dd>
@@ -125,20 +138,16 @@ $(window).on("load", function(){
           </dl>
      
         
-     
      </div>
+     </aside>
       </div>
     
-<!-- right container javascrpits -->
-<div id="smallcontainer2" class="col-md-6 col-sm-12" style="background-color: transparent">
-    <div class="col-md-12 col-sm-12" id="monitor">
-        <p id="showin_text" class="trn"></p>
-</div> 
-      </div>
-      </div>
-      <div class="container-fluid">
-<div id="copyright" class="trn col-md-12 col-sm-12 col-xs-12" > Copyright © 2017 Portfolio programisty - Paweł Skrzeszewski. Wszelkie prawa zastrzeżone. </div>
-</div>
+     
+      
+<footer class="row">
+<div id="copyright" class="trn col-md-12 col-sm-12 col-xs-12 trn" > Copyright © 2017 Portfolio programisty - Paweł Skrzeszewski. Wszelkie prawa zastrzeżone. </div>
+</footer>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

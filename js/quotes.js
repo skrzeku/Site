@@ -15,18 +15,18 @@ function changequotes()
         
 	
 
-	$(".rectangle p").fadeOut(4000, function() {
-       $(".rectangle p").remove();
+	$(".rec p").fadeOut(4000, function() {
+       $(".rec p").remove();
         var rand_quotes = quotes[Math.floor(Math.random() * quotes.length)];
         var txt3 =  $("<p></p>").text(rand_quotes);
         // or by using javascript
 		//var txt3 = document.createElement("p");
   //  txt3.innerHTML = rand_quotes;    
-		$(".rectangle").append(txt3);
-        $(".rectangle p").attr('id', 'all_quotes').hide();
+		$(".rec").append(txt3);
+        $(".rec p").attr('id', 'all_quotes').hide();
         $("#all_quotes").addClass("trn");
         checkcookies();
-        $(".rectangle p").fadeIn(5000);
+        $(".rec p").fadeIn(5000);
         
         
        

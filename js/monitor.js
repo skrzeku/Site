@@ -154,7 +154,7 @@ $(this).wrap('<a href="https://www.linkedin.com/in/pawe%C5%82-skrzeszewski-847a3
                 $(monitor).append(txt5);
     
                $(paramonit).attr('id', 'showin_text').hide();
-                 $(paramonit).addClass("trn");
+                 $(paramonit).addClass("trn lorem");
                 checkcookies();
                // $(paramonit).append( '<a href="https://github.com/skrzeku/java-game">java game</a>' );
                var inside_monitor = $(monitor).children();
@@ -171,7 +171,7 @@ $(this).wrap('<a href="https://www.linkedin.com/in/pawe%C5%82-skrzeszewski-847a3
                 var txt5 =  $("<p></p>").text(sitetext);
                 $(monitor).append(txt5);
                $(paramonit).attr('id', 'showin_text').hide();
-                 $(paramonit).addClass("trn");
+                 $(paramonit).addClass("trn lorem");
                 checkcookies();
                //$(paramonit).append( '<a href="https://github.com/skrzeku/java-game" class="trn">site</a>' );
                var inside_monitor = $(monitor).children();

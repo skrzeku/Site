@@ -32,6 +32,9 @@ body {
     color: black;
     font-weight: 800;  
 }
+.navbar {
+    font-size: 1.6rem;
+}
 .navbar-collapse {
     color: black;
 }
@@ -94,7 +97,6 @@ body {
 }
 #site
 {
-margin-left: 3vw;
     
 }
 
@@ -105,14 +107,16 @@ margin-left: 3vw;
     border-style: hidden;
 }
 #rec_contact {
-    margin-top: 30vh;
+ margin-top: 200px;
+}
+.contact_icons {
+  margin: 10px;
 }
 #all_quotes
 {    
-    
-    float: none;
     font-size: 2rem;
 	text-align: justify;
+    margin: 10px;
 	font-family: 'Gloria Hallelujah', cursive;
 	color: black;
 	text-shadow: black;
@@ -130,8 +134,8 @@ margin-left: 3vw;
 #monitor {
     position: relative;
     width: 100%;
-    margin-top: 2vh;
-    height: 100vh;
+    padding: 30px;
+    height: 80vh;
     background-image: url(monitor6.png);
     background-color: transparent;
 background-repeat: no-repeat;
@@ -218,21 +222,11 @@ position: relative;
 z-index: 10;
 }
 #show_text {
-	font-size: 4vw;
     color: white;
-    margin-top: 10vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    text-align: justify;
-
+    font-size: 3rem;
 }
 #showin_text {
-	font-size: 1.8vw;
-    color: white;
-    padding: 2vh;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    text-align: justify;
+color: white;
 
 }
 
@@ -242,15 +236,31 @@ z-index: 10;
     font-weight: 600;
     
 }
+#projects_links {
+    color: black;
+    margin-left: 100px;
+}
 .fa {
-  padding: 1vh;
-  width: 5vw;
+
   display: inline;
   text-decoration: none;
 
 }
+.contact_img {
+    width: 130px;
+    display: inline;
+}
 .fa:hover {
     opacity: 0.7;
+}
+.min_img {
+  
+    width: 150px;
+    display: inline;
+    margin: 15px;
+}
+.agits {
+    margin: 30px;
 }
 #dd1 {
     font-size: 1.2vw;
@@ -260,7 +270,7 @@ z-index: 10;
 	color:black;
    
 }
-#omnie_text::first-letter {
+.lorem::first-letter {
     margin-left: 40px;
     font-size: 150%;
     font-family: 'Roboto', sans-serif;
@@ -279,11 +289,8 @@ z-index: 10;
     margin-left: 5vw;
 }
 #about_projects {
-	font-size: 1.5vw;
 	color:black;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    text-align: justify;
+    margin-left: 15px;
 }
 #copyright {
     margin-left: 300px;

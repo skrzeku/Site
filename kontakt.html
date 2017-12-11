@@ -38,33 +38,31 @@
       <script src="js/elementReady.js"></script>
     
 	<!-- styles -->
-	<link rel="stylesheet" href="css/loader.css">
-    <link href="translatejs.css" rel="stylesheet">
-      <link href="js/jquery/jquery-ui.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/loader.css" media="screen">
+    <link href="translatejs.css" rel="stylesheet" media="screen">
+      <link href="js/jquery/jquery-ui.css" rel="stylesheet" type="text/css" media="screen">
+     <link rel="stylesheet" href="css/responsive.css" media="screen">
       
   <!-- Scripts -->
        
        
 	<script type="text/javascript"> 
 	 $(document).ready(function (){
-    
 	 window.setTimeout('slide_quotes();', 3000);
-   //  window.setTimeout('jump_flags1 ();', 3000);
-   // window.setTimeout('jump_flags2 ();', 4500);
+     window.setTimeout('jump_flags1 ();', 3000);
+    window.setTimeout('jump_flags2 ();', 4500);
          translatore();
-        
-   
 	 });
         
         function jump_flags1 () {
             setInterval('jump_flag1 ();', 5000);
         };
-         function jump_flags2 () {
+        function jump_flags2 () {
             setInterval('jump_flag2 ();', 5000);
         };
         
 	function slide_quotes () {
-	setInterval('changequotes();', 14000);
+	setInterval('changequotes();', 12000);
 	};
 	</script>
        
@@ -110,34 +108,38 @@ $(window).on("load", function(){
 </nav>
       
 <div class="container-fluid">
- <div id="smallcontainer1" class="col-md-6">
-     <div id="icon_container" class="col-md-12">
-     <a href="#" class="fa contact_icons" data-toggle="tooltip" title="Wyświtl adres facebook!" style="color:white;" id="face"><img src='http://icons.iconarchive.com/icons/yootheme/social-bookmark/512/social-facebook-box-blue-icon.png' style="width: 8vw;"></a>
-       <a href="#" class="fa" data-toggle="tooltip" title="Wyświetl adres gmail!" style="color:white;" id="gmail"><img src='http://icons.iconarchive.com/icons/dtafalonso/android-l/512/Gmail-icon.png' style="width: 9vw;"></a>
-    <a href="#" class="fa" data-toggle="tooltip" title="Wyświetl GitHub!" style="color:white;" id="git"><img src='https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67' style="width: 8vw;"></a>
-         <a href="#" class="fa" data-toggle="tooltip" title="Wyświetl adres linkedIn!" style="color:white;" id="linked"><img src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png' style="width: 8vw;"></a>
+    <div class="row">
+ <div id="smallcontainer1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+     <div id="icon_container">
+     <a href="#" class="fa contact_icons" data-toggle="tooltip" title="Wyświtl adres facebook!" style="color:white;" id="face"><img src='http://icons.iconarchive.com/icons/yootheme/social-bookmark/512/social-facebook-box-blue-icon.png' class="contact_img img-responsive"></a>
+       <a href="#" class="fa contact_icons" data-toggle="tooltip" title="Wyświetl adres gmail!" style="color:white;" id="gmail"><img src='http://icons.iconarchive.com/icons/dtafalonso/android-l/512/Gmail-icon.png' class="contact_img img-responsive"></a>
+    <a href="#" class="fa contact_icons" data-toggle="tooltip" title="Wyświetl GitHub!" style="color:white;" id="git"><img src='https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67' class="contact_img img-responsive"></a>
+         <a href="#" class="fa contact_icons" data-toggle="tooltip" title="Wyświetl adres linkedIn!" style="color:white;" id="linked"><img src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png' class="contact_img img-responsive"></a>
      
      </div>
      
      <!-- quotes -->
-<div class="col-md-12 rectangle" id="rec_contact"><p id="all_quotes" class="trn">"Biorąc pod uwagę aktualny, smutny stan naszych programów komputerowych, rozwijanie oprogramowania jest cały czas jeszcze czarną magią i nie może być jeszcze nazwane dziedziną inżynierii." - Bill Clinton</p></div>
+<div class="rec" id="rec_contact"><p id="all_quotes" class="trn">"Biorąc pod uwagę aktualny, smutny stan naszych programów komputerowych, rozwijanie oprogramowania jest cały czas jeszcze czarną magią i nie może być jeszcze nazwane dziedziną inżynierii." - Bill Clinton</p></div>
     
     
     </div>
 <!-- right container javascrpits -->
-<div id="smallcontainer2" class="col-md-6 col-sm-12" style="background-color: transparent">
-    <div class="col-md-12 col-sm-12" id="monitor">
-        <p id="show_text" style="padding-top: 10vh;"></p>
+<div id="smallcontainer2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: transparent">
+    <div class="ss" id="monitor">
+        <p id="show_text" class="lorem"></p>
         
         
 
 
 </div> 
       </div>
+    </div>
    
 </div>
 
-<div id="copyright" class="trn col-md-12 col-sm-12 col-xs-12" > Copyright © 2017 Portfolio programisty - Paweł Skrzeszewski. Wszelkie prawa zastrzeżone. </div>
+<footer class="row">
+<div id="copyright" class="trn col-md-12 col-sm-12 col-xs-12 trn" > Copyright © 2017 Portfolio programisty - Paweł Skrzeszewski. Wszelkie prawa zastrzeżone. </div>
+</footer>
 
 
 

@@ -107,6 +107,9 @@ window.translatore = function ()
          'Gra okienkowa kółko i krzyżyk napisana w języku java w środowisku IDE przy użyciu Eclipse. W grze dokładnie widzimy który gracz wybiera pole w tym momencie, został ułożony mechanizm zwycięstwa oraz możliwość zrestartowania gry w dowolnym momencie jak i po jej zakończeniu. Kod źródłowy z grą znajduje się w linku "java-game" w dolnej części strony' : {
              en: 'Windows game Tic-Tac-Toe written in java in the Environment IDE using Eclipse. In the game exactly, we see that the player selects the field at this point, has been laid out the mechanism of the victory and the ability to restart the game at any time as and when it is completed. The source code of the game is in the link "java-game" on the bottom'
          },
+         'Aplikacja mobilna furniture app pozawala utworzyć prosty projekt własnej kuchni. Aplikacja pozwala na wprowadzenie kilku elementów. Jest to bardzo prosta aplikacja webowa w Javascript, a tym projekcie chciałem się głównie skupić na obsłudze formularzy oraz poprawności wprowadzanych danych. Aplikacja wykonana przy użyciu Javascript, bliblioteki JQuery, HTML5 oraz CSS3. Następna aplikacja powstanie już w Angular 4 przy użyciu m.in. TypeScript' : {
+            en: 'Furniture app allows you to create a simple project of your own kitchen. The application allows you to enter a few kitchen elements. This is a very simple Web application in Javascript, and on this project I wanted to focus mainly on forms and input validation. The application made by using Javascript, libary JQuery, HTML5 and CSS3. The next application will be create in Angular 4 by using Typescript'
+         },
          " oraz na moim profilu" : {
            en: " and on my profile"  
          },

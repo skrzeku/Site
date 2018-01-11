@@ -9,12 +9,14 @@
     var lorem4 = "#lorem4";
     var text = "#show_text";
     var paramonit = "#monitor p"
+    var imagestext = "";
     
   var timeline;
     
     var tictext = 'Gra okienkowa kółko i krzyżyk napisana w języku java w środowisku IDE przy użyciu Eclipse. W grze dokładnie widzimy który gracz wybiera pole w tym momencie, został ułożony mechanizm zwycięstwa oraz możliwość zrestartowania gry w dowolnym momencie jak i po jej zakończeniu. Kod źródłowy z grą znajduje się w linku "java-game" w dolnej części strony';
     var sitetext = 'Strona została wykonana przy użyciu Html5, CSS3 oraz Javascriptu z biblioteką Jquery. Strona dostosowana jest również do wszystkich urządzeń mobilnych poprzez użycie  bibliotek Bootstrap 3, który umożliwia tworzenie responsywnych stron. Zostało zaczerpnięte również kilka ogólno dostępnych pluginów m.in. TwinLite oraz translate.js. Kod źródłowy do strony znajduje się w linku "Site" w dolnej części strony';
-  function buildTimeline() {
+    var furtext = "Aplikacja mobilna furniture app pozawala utworzyć prosty projekt własnej kuchni. Aplikacja pozwala na wprowadzenie kilku elementów. Jest to bardzo prosta aplikacja webowa w Javascript, a tym projekcie chciałem się głównie skupić na obsłudze formularzy oraz poprawności wprowadzanych danych. Aplikacja wykonana przy użyciu Javascript, bliblioteki JQuery, HTML5 oraz CSS3. Następna aplikacja powstanie już w Angular 4 przy użyciu m.in. TypeScript";
+    function buildTimeline() {
       
     timeline = new TimelineMax({
       paused: true
@@ -145,9 +147,34 @@ $(this).wrap('<a href="https://www.linkedin.com/in/pawe%C5%82-skrzeszewski-847a3
           });
       });
         };
+                        //start Portfolio.html functions
+
+
+         function portfolios_images() {
+             $(monitor).children().fadeOut(2000, function() {
+                 $(monitor).children().remove();
+                 var txt5 =  $("<p></p>").text(imagestext);
+                 $(monitor).append(txt5);
+                 $(paramonit).attr('id', 'showin_text').hide();
+                 $(paramonit).addClass("trn lorem");
+                 checkcookies();
+                 var inside_monitor = $(monitor).children();
+                 var tl4 = new TimelineLite({paused:true});
+                 tl4.staggerFrom(inside_monitor, 0.3, {top:"-=30px", rotation:"-20deg", alpha:0, scale:1.8, ease:Back.easeOut}, 0.2);
+                 $(inside_monitor).fadeIn(2000, function() {
+                     tl4.play();
+                 });
+             });
+         }
+
         if (media =="tictactoe") {
-             
-            $(monitor).children().fadeOut(2000, function() {
+             imagestext = tictext;
+             portfolios_images();
+
+
+
+
+         /*  $(monitor).children().fadeOut(2000, function() {
                
                 $(monitor).children().remove();
                 var txt5 =  $("<p></p>").text(tictext);
@@ -163,9 +190,14 @@ $(this).wrap('<a href="https://www.linkedin.com/in/pawe%C5%82-skrzeszewski-847a3
                 $(inside_monitor).fadeIn(2000, function() {
               tl4.play();
           });
-      });
+      }); */
         };
         if (media =="site") {
+            imagestext = sitetext;
+            portfolios_images();
+
+
+/*
             $(monitor).children().fadeOut(2000, function() {
                 $(monitor).children().remove();
                 var txt5 =  $("<p></p>").text(sitetext);
@@ -173,15 +205,19 @@ $(this).wrap('<a href="https://www.linkedin.com/in/pawe%C5%82-skrzeszewski-847a3
                $(paramonit).attr('id', 'showin_text').hide();
                  $(paramonit).addClass("trn lorem");
                 checkcookies();
-               //$(paramonit).append( '<a href="https://github.com/skrzeku/java-game" class="trn">site</a>' );
                var inside_monitor = $(monitor).children();
                 var tl4 = new TimelineLite({paused:true});
      tl4.staggerFrom(inside_monitor, 0.3, {top:"-=30px", rotation:"-20deg", alpha:0, scale:1.8, ease:Back.easeOut}, 0.2);
                 $(inside_monitor).fadeIn(2000, function() {
               tl4.play();
           });
-      });
+      });    */
         };
+        if (media =="furniture") {
+            imagestext = furtext;
+            portfolios_images();
+
+        }
       
     
      ev.preventDefault(); 
